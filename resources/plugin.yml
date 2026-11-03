@@ -1,0 +1,11 @@
+name: GrimVerseBounty
+version: 4.0.0
+main: main.GrimVerseBounty
+api-version: '1.20'
+author: ItsMijee
+description: Ultimate Professional Bounty System with Flat Structure.
+commands:
+  bounty:
+    description: Perintah utama sistem bounty.
+  bountyclaim:
+    description: Klaim item bounty yang tertunda di inventory.
