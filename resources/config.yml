@@ -1,0 +1,60 @@
+###############
+# plugin by ItsMijee   #
+###############
+
+options:
+  prefix: "&8[&c&lSʏsᴛᴇᴍ&8] &7"
+  max-page: 2
+  max-global: 90
+  max-permission-check: 15
+
+gui:
+  main-title: "&5&lɢʀɪᴍᴠᴇʀsᴇ ʙᴏᴜɴᴛʏ"
+  preview-title: "&5&lʜᴀᴅɪᴀʜ ʙᴏᴜɴᴛʏ"
+  deposit-title: "&6&lᴍᴀsᴜᴋᴋᴀɴ ʜᴀᴅɪᴀʜ ʙᴏᴜɴᴛʏ"
+
+limits:
+  default: 1
+  stone: 2
+  copper: 3
+  diamond: 5
+  obsidian: 7
+
+messages:
+  player-only: "&cPerintah ini hanya dapat digunakan oleh pemain di dalam game!"
+  no-permission: "&cKamu tidak memiliki izin untuk menggunakan perintah ini."
+  reload-success: "&aKonfigurasi GrimVerseBounty berhasil dimuat ulang!"
+  invalid-player: "&cTarget tidak ditemukan atau sedang offline!"
+  cannot-self: "&cKamu tidak bisa memasang bounty pada dirimu sendiri!"
+  limit-reached: "&cBatas bounty aktif kamu sudah tercapai (%current%/%limit%)."
+  global-full: "&cBounty global sedang penuh! Slot hanya tersedia untuk prioritas tinggi."
+  deposit-instruction: "&fMasukkan hadiah untuk target &c%target%&f, lalu &etutup menu &funtuk memasang bounty."
+  deposit-cancel: "&cPemasangan bounty dibatalkan, tidak ada hadiah yang dimasukkan."
+  bounty-announced: "&fBounty Baru! &e%player% &fmemasang bounty pada &c%target%&f!"
+  target-warning: "&cKamu menjadi target bounty! Berhati-hatilah."
+  bounty-claimed: "&e%killer% &fberhasil mengklaim bounty pada &c%victim%&f!"
+  bounty-claimed-owner: "&fBounty kamu pada &c%victim% &ftelah diklaim oleh &e%killer%&f!"
+  cannot-claim-self: "&cKamu tidak bisa mengklaim bounty buatanmu sendiri."
+  evicted: "&cBounty kamu pada &f%target% &cdihapus otomatis karena slot penuh. Hadiah dikembalikan."
+  no-claim-pending: "&cTidak ada hadiah bounty yang menunggu diklaim."
+  inventory-full: "&cInventory kamu penuh! Kosongkan ruang lalu ketik &e/bountyclaim&c."
+  claim-success: "&aHadiah bounty telah dikirimkan ke inventory kamu!"
+  bounty-not-found: "&cBounty ini sudah tidak tersedia!"
+  help: 
+    - "&8&m---------------------------------"
+    - "&c&lBounty Commands:"
+    - "&e/bounty &7- Buka menu utama bounty"
+    - "&e/bounty <player> &7- Pasang bounty ke pemain"
+    - "&e/bountyclaim &7- Ambil sisa hadiah bounty"
+    - "&e/bounty reload &7- Reload konfigurasi plugin"
+    - "&8&m---------------------------------"
+
+sounds:
+  open-gui: BLOCK_NOTE_BLOCK_PLING
+  error: ENTITY_VILLAGER_NO
+  success: ENTITY_EXPERIENCE_ORB_PICKUP
+  deposit: BLOCK_CHEST_OPEN
+  bounty-new: ENTITY_WITHER_SPAWN
+  target-warn: ENTITY_WITHER_AMBIENT
+  claim: UI_TOAST_CHALLENGE_COMPLETE
+  item-pickup: ENTITY_ITEM_PICKUP
