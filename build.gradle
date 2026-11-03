@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group = 'main'
+version = '4.0.0-ULTIMATE'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.papermc.io/repository/maven-public/' }
+}
+
+dependencies {
+    compileOnly 'io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT'
+}
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
+}
+
+sourceSets {
+    main {
+        java { srcDirs = ['java'] }
+        resources { srcDirs = ['resources'] }
+    }
+}
